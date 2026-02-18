@@ -1,0 +1,19 @@
+{
+  "name": "programming-hero-payoo-app",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "@types/bun": "latest",
+    "daisyui": "^5.5.18",
+    "tailwindcss": "^4.1.18"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "dev": "bunx @tailwindcss/cli -i ./style/main.css -o ./style/output.css --watch",
+    "build": "bunx @tailwindcss/cli -i ./style/main.css -o ./style/output.css --minify"
+  }
+}

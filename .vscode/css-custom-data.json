@@ -1,0 +1,9 @@
+{
+  "version": 1.1,
+  "atDirectives": [
+    {
+      "name": "@plugin",
+      "description": "Registers a Tailwind CSS plugin."
+    }
+  ]
+}

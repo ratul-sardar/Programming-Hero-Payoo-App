@@ -2,3 +2,8 @@
 @plugin "daisyui" {
   themes: "light";
 }
+
+* {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}

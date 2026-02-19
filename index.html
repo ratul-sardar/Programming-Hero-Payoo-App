@@ -3,30 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style/output.css" />
+    <script src="./script/login.js" defer></script>
     <title>Payoo</title>
   </head>
   <body
-    class="bg-base-200 h-dvh flex flex-col justify-center items-center gap-8"
+    class="bg-base-200 h-dvh flex flex-col justify-center items-center gap-8 p-6"
   >
     <header>
       <div id="siteLogo" class="">
         <img src="./assets/Logo-full.png" alt="Site Logo" />
       </div>
     </header>
-    <main>
+    <main class="w-full">
       <fieldset
-        class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4"
+        class="fieldset bg-white p-8 border-base-300 rounded-3xl w-full max-w-md mx-auto border"
       >
-        <legend class="fieldset-legend">Login</legend>
+        <label class="label text-neutral font-bold">Mobile Number</label>
+        <input
+          id="tel-field"
+          type="tel"
+          class="input rounded-full w-full"
+          placeholder="Enter your number"
+          minlength="11"
+          maxlength="11"
+        />
 
-        <label class="label">Email</label>
-        <input type="email" class="input" placeholder="Email" />
+        <label class="label text-neutral font-bold">4 digit pin</label>
+        <input
+          id="password-field"
+          type="password"
+          class="input rounded-full w-full"
+          placeholder="Password"
+          minlength="4"
+          maxlength="4"
+        />
 
-        <label class="label">Password</label>
-        <input type="password" class="input" placeholder="Password" />
-
-        <button class="btn btn-neutral mt-4">Login</button>
+        <button id="login-btn" class="btn btn-primary rounded-full mt-4">
+          Login
+        </button>
       </fieldset>
     </main>
   </body>

@@ -1,19 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./style/output.css" />
-    <title>Payoo</title>
-  </head>
-  <body class="max-w-lg mx-auto bg-base-200 h-dvh">
-    Home page
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="./style/main.css" />
+        <title>Payoo</title>
+    </head>
+    <body class="max-w-lg mx-auto bg-base-200 h-dvh">
+        <header
+            class="px-5 py-3 border-b border-gray-400 flex justify-between items-center"
+        >
+            <div class="flex items-center space-x-2">
+                <div class="" id="siteLog">
+                    <img src="./assets/logo.png" alt="site logo" width="64px" />
+                </div>
+                <div class="space-y-1">
+                    <div class="text-lg font-black">
+                        $<span class="" id="balance">0</span>
+                    </div>
+                    <p>Available Balance</p>
+                </div>
+            </div>
+
+            <a
+                href="./index.html"
+                class="btn rounded-lg border border-gray-400 font-normal space-y-2"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a
+            >
+        </header>
+    </body>
 </html>

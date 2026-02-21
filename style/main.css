@@ -1,9 +1,13 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: "light";
+  themes: light --default;
 }
 
 * {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
+}
+
+p {
+  color: gray;
 }
